@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes de Star Wars</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 0 15px;
+        }
+        .table-container {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            table-layout: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="my-4 text-center">Personajes de Star Wars</h1>
+    <div class="form-group">
+        <label for="idSearch">Buscar por ObjectId:</label>
+        <input type="text" id="idSearch" class="form-control" placeholder="Ingrese ObjectId">
+        <button id="searchId" class="btn btn-primary mt-2">Buscar</button>
+    </div>
+    <div class="form-group">
+        <label for="nameSearch">Buscar por Nombre:</label>
+        <input type="text" id="nameSearch" class="form-control" placeholder="Ingrese nombre">
+    </div>
+    <div class="table-container">
+        <table class="table table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Altura</th>
+                    <th>Peso</th>
+                    <th>Color de Cabello</th>
+                    <th>Color de Piel</th>
+                    <th>Color de Ojos</th>
+                    <th>Año de Nacimiento</th>
+                    <th>Género</th>
+                    <th>Mundo de Origen</th>
+                    <th>Especie</th>
+                </tr>
+            </thead>
+            <tbody id="characterList">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
